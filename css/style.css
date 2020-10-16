@@ -80,7 +80,6 @@ h6,
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 15px;
-  letter-spacing: 1px;
 }
 ::selection {
   background: #000;
@@ -135,7 +134,9 @@ h6,
   font-size: 35px;
   color: #FFE600;
 }
-
+.social .fab:hover, .social .fas:hover, .social .fab:hover {
+  color: #fbfbfb;
+}
 
 
 /*-----------------------------------------------------------
@@ -166,7 +167,7 @@ h2,
 .h2 {
   font-size: 1.3rem;
   color: #1B1B1B;
-  letter-spacing: 1rem;
+  letter-spacing: 1px;
   margin: 20px 0px;
   line-height: 2.5rem;
   padding: 0px 20px;
@@ -187,7 +188,7 @@ h4,
 .h4 {
   margin-top: 70px;
   font-size: 1rem;
-  line-height: 2rem;
+  
   color: #1B1B1B;
   font-weight: 600;
   margin: 20px 0px;
@@ -197,7 +198,7 @@ h5,
 .h5 {
   margin-top: 70px;
   font-size: 1rem;
-  line-height: 2rem;
+  
   color: #707070;
   font-weight: 400;
   margin: 0px;
@@ -421,11 +422,11 @@ nav {
 .services {
   width: 100vw;
   background-color: #F5F5F5;
-  padding: 80px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
 }
 .title {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .service-box {
   text-align: center;
@@ -439,7 +440,6 @@ nav {
 }
 .service-box p {
   font-size: 0.8rem;
-  line-height: 1.7rem;
 }
 .services-progress {
   background-color: #fff;
@@ -521,12 +521,15 @@ nav {
   padding: 0px;
   opacity: 0.6;
 }
+.services .container .row .col-12 .services-progress {
+  padding-bottom: 20px;
+}
 /*-----------------------------------------------------------
     8. Portfolio
 -------------------------------------------------------------*/
 .portfolio {
   width: 100vw;
-  padding: 80px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
 }
 #filter {
   text-align: center;
@@ -535,7 +538,7 @@ nav {
   margin: 40px;
 }
 #filter a {
-  margin: 0px 30px;
+  margin: 0px 20px;
 }
 #filter a:hover {
   border-bottom: 3px solid #FFE600;
@@ -607,10 +610,10 @@ div.cont{
 /*-----------------------------------------------------------
     9. Video
 -------------------------------------------------------------*/
-.video {
+.image {
   width: 100vw;
   height: 380px;
-  background-image: url("../images/video.jpg");
+  background-image: url("../images/image-overly.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -618,7 +621,7 @@ div.cont{
   position: relative;
   padding: 180px 0px;
 }
-.video-overlay {
+.image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -632,7 +635,7 @@ div.cont{
 -------------------------------------------------------------*/
 .team {
   width: 100vw;
-  padding: 80px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
   position: relative;
 }
 .team-box {
@@ -642,7 +645,7 @@ div.cont{
   -moz-box-shadow: 0px 0px 15px 0px rgba(27,27,27,0.1);
   box-shadow: 0px 0px 15px 0px rgba(27,27,27,0.1);
   height: 500px;
-  max-width: 270px;
+  max-width: 350px;
 }
 .team-image {
   position: relative;
@@ -735,20 +738,23 @@ footer {
   color: #fff;
 }
 .footer-links li p {
-  color: #BABABA;
-  font-size: 1rem;
+  color: #FFE600;
+  font-size: 20px;
 }
 .footer-links li a {
   color: #BABABA;
   font-size: 0.7rem;
 }
+.footer-links li a:hover {
+color: #FFE600;
+}
 .footer-contact p:nth-child(1) {
-  color: #BABABA;
-  font-size: 1rem;
+  color: #FFE600;
+  font-size: 20px;
 }
 .footer-contact p:nth-child(2) {
   color: #BABABA;
-  font-size: 0.8rem;
+  font-size: 15px;
 }
 .footer-btn a {
   background-color: #FFE600;
@@ -774,7 +780,9 @@ footer {
 }
 .footer-info a img {
   width: 80px;
+  
 }
+
 /*-----------------------------------------------------------
     12. Responsive
 -------------------------------------------------------------*/
@@ -914,6 +922,41 @@ footer {
   h5, .h5 {
       padding: 0px 40px;
   }
+  h1,
+.h1 {
+  
+  padding: 0px 20px;
+}
+
+h2,
+.h2 {
+
+  
+  padding: 0px 20px;
+}
+
+h3,
+.h3 {
+  
+  padding: 0px 20px;
+  
+}
+
+h4,
+.h4 {
+  
+  margin: 20px 0px;
+}
+
+h5,
+.h5 {
+
+  
+  padding: 0px 40px;
+}
+
+
+  
   .office-info-box {
     text-align: center;
     padding: 30px;
@@ -935,5 +978,15 @@ footer {
   background-color: transparent;
   border: 1px solid #FFE600;
   color: #BABABA;
+}
+.video-btn a {
+  color: #FFE600;
+  border: 1px solid #FFE600;
+  padding: 20px 30px;
+  font-weight: 600;
+}
+.video-btn a:hover {
+  background-color: #FFE600;
+  color: #1B1B1B;
 }
 }
