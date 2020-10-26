@@ -99,6 +99,7 @@ h6,
 :active,
 :focus {
   outline: none !important;
+  
 }
 .text-left {
   text-align: left !important;
@@ -124,18 +125,22 @@ h6,
 .fab {
   font-size: 90px;
   color: #FFE600;
+  transition: 1s;
 }
 
 .fas {
   font-size: 40px;
   color: #FFE600;
+  transition: 1s;
 }
 .social .fab {
   font-size: 35px;
   color: #FFE600;
+  transition: 1s;transition: 1s;
 }
 .social .fab:hover, .social .fas:hover, .social .fab:hover {
   color: #fbfbfb;
+  transition: .5s;
 }
 
 
@@ -279,31 +284,15 @@ li {
   font-weight: 600;
   letter-spacing: 0.2rem;
   border: 1px solid #FFE600;
+  transition: 1s;
 }
 .learn-more-btn a:hover {
   background-color: transparent;
   border: 1px solid #FFE600;
   color: #fbfbfb;
+  transition: .5s;
 }
-.portfolio-btn {
-  text-align: center;
-  margin-top: 70px;
-}
-.portfolio-btn a {
-  padding: 20px 40px;
-  background-color: #FFE600;
-  font-size: 0.7rem;
-  font-weight: 600;
-  border: 1px solid #FFE600;
-}
-.portfolio-btn a:hover {
-  border: 1px solid #FFE600;
-  background-color: transparent;
-  -webkit-transition: all 0.125s ease-in-out;
-  -moz-transition: all 0.125s ease-in-out;
-  transition: all 0.125s ease-in-out;
-  color: #1B1B1B;
-}
+
 .video-btn {
   text-align: center;
 }
@@ -312,10 +301,12 @@ li {
   border: 1px solid #FFE600;
   padding: 30px 60px;
   font-weight: 600;
+  transition: 1s;
 }
 .video-btn a:hover {
   background-color: #FFE600;
   color: #1B1B1B;
+  transition: 1s;
 }
 /*-----------------------------------------------------------
     5. Header
@@ -537,12 +528,31 @@ nav {
 #filter img {
   margin: 40px;
 }
-#filter a {
+#filter a{
   margin: 0px 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #707070;
+  border-radius: 10px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 0.616),
+              -2px -2px 12px rgba(255,255,255,0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.705),
+               2px 2px 8px rgba(0,0,0,0.15);
 }
-#filter a:hover {
-  border-bottom: 3px solid #FFE600;
+
+#filter a:hover{
+  
+  box-shadow:inset -2px -2px 8px rgba(255,255,255,1),
+  inset -2px -2px 12px rgba(255,255,255,0.5),
+  inset 2px 2px 4px rgba(255,255,255,1),
+  inset 2px 2px 8px rgba(0,0,0,0.15);
+  display: inline-block;
+  transform: scale(0.98);
+  transition-property: transform;
+  transition-duration: .5s;
 }
+
 div.imgs img{
   width:100%;
   height:auto;
@@ -570,9 +580,9 @@ div.cont{
   text-align: center;
   padding: 25px;
   opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .yellow-box {
   position: absolute;
@@ -582,9 +592,9 @@ div.cont{
   left: 15%;
   top: 10%;
   opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .work-info  {
   color: #1B1B1B!important;
@@ -762,14 +772,17 @@ color: #FFE600;
   border-radius: 25px;
   font-weight: 600;
   border: 1px solid #FFE600;
+  transition: 1s;
 }
 .footer-btn {
   margin-top: 45px;
+  
 }
 .footer-btn a:hover {
   background-color: transparent;
   border: 1px solid #FFE600;
   color: #BABABA;
+  transition: 1s;
 }
 .social {
   margin-top: 50px;
@@ -808,6 +821,10 @@ color: #FFE600;
 @media only screen and (max-width: 1200px) {
   div.cont{
     width: 33.33333%;
+  }
+
+  #filter a {
+    margin: 0px 10px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -855,6 +872,7 @@ color: #FFE600;
 @media only screen and (max-width: 768px) and (min-width: 600px) {
   #filter a {
     margin: 0px 5px;
+    padding: 8px 15px;
   }
   .work-info {
     padding:2px;
@@ -870,6 +888,10 @@ color: #FFE600;
   }
   div.cont{
     width:100%;
+  }
+  #filter a {
+    margin: auto;
+    padding: 8px 15px;
   }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -899,6 +921,11 @@ color: #FFE600;
   }
   .quote-bg-rect {
     display: none;
+  }
+  #filter a {
+    font-size: 9px;
+    margin: auto;
+    padding: 4px 10px;
   }
 }
 /* Extra small devices (phones, 250px and down) */
@@ -953,6 +980,12 @@ h5,
 
   
   padding: 0px 40px;
+}
+
+#filter a {
+  font-size: 10px;
+  margin: auto;
+  padding: 2px 6px;
 }
 
 
