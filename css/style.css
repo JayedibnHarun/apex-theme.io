@@ -724,6 +724,18 @@ div.cont{
 .quote-right p:nth-child(2) {
   float: right;
 }
+
+.row .col-12 {
+  margin-top: 50px;
+  width: 100%;
+}
+.row .col-12 h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  color:#000000;
+  
+}
 /*-----------------------------------------------------------
     11. Footer
 -------------------------------------------------------------*/
