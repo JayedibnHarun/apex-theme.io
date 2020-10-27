@@ -699,7 +699,6 @@ div.cont{
   color: #BABABA;
 }
 
-
 .row .col-12 {
   margin-top: 50px;
   width: 100%;
@@ -710,6 +709,9 @@ div.cont{
   font-size: 25px;
   color:#000000;
   
+}
+.carousel-indicators li {
+  background-color: tomato;
 }
 /*-----------------------------------------------------------
     11. Footer
